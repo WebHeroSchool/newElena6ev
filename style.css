@@ -2,10 +2,24 @@
    font-family: 'PT Serif', serif;
  }
 
-.body{
+body{
+  margin: 0;
+  border: dashed 1px red;
+}
+
+.wrapper{
+  margin: auto;
+  width: 80%;
   border: dashed 1px red;
 }
 
 .menu__item{
+  display: inline-block;
+  border: dashed 1px red;
+}
+
+.logo{
+  margin-right: 63%;
+  display: inline-block;
   border: dashed 1px red;
 }
