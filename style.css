@@ -5,3 +5,7 @@
 .body{
   border: dashed 1px red;
 }
+
+.menu__item{
+  border: dashed 1px red;
+}
