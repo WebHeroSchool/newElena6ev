@@ -22,6 +22,7 @@ body{
 .menu__item{
     border: dashed 1px red;
     padding: 0 8px;
+    display: inline-block;
 }
 
 .menu__item:last-child{
@@ -29,13 +30,38 @@ body{
 }
 
 .logo{
-  margin-right: 63%;
+  margin-right: 55%;
   display: inline-block;
   border: dashed 1px red;
-  padding: 40px 0;
+  font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
+  position: relative;
+  padding-left: 44px;
 }
 
 .header{
   display: flex;
   justify-content: space-between;
+  padding: 40px 0;
+}
+
+.logo__circle {
+ width: 28px;
+ height: 28px;
+ border: dashed 1px red;
+ position: absolute;
+ left: 0;
+ top: 50%
+ transform: translateY(50%);
+ border-radius: 50%;
+ opacity: .7;
+}
+
+.logo__circle_color_blue{
+  left: 8px;
+  top: 56%;
+  background: #C8DBFB;
+}
+
+.logo__circle_color_dark-blue{
+  background: #0056EC;
 }
