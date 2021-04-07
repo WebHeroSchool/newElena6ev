@@ -16,15 +16,16 @@ body{
 .menu{
   display: flex;
   align-items: center;
-  border: dashed 1px red;
 }
 
 .menu__item{
-    border: dashed 1px red;
-    margin: 0 5px;
+    position: relative;
+    margin-right: 26px;
     display: inline-block;
     font:500 18px/21px Roboto,arial,helvetica,sans-serif;
     color: #000;
+    text-decoration: none;
+    transition: opacity 0.5s;
 }
 
 .menu__item_active::after{
@@ -35,16 +36,25 @@ body{
   width: 100%;
   height: 3px;
   background: #0056EC;
+  opacity: 0;
+  transition: opacity.5s;
 }
 
 .menu__item:last-child{
   margin-right: 0;
 }
 
+.menu__item:hover{
+  opacity: 0.5;
+}
+
+.menu__item:hover:after,.menu__item_active:after{
+  opacity: 1;
+}
+
 .logo{
   margin-right: 40%;
   display: inline-block;
-  border: dashed 1px red;
   font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
   position: relative;
   padding-left: 44px;
@@ -59,7 +69,6 @@ body{
 .logo__circle {
  width: 28px;
  height: 28px;
- border: dashed 1px red;
  position: absolute;
  left: 0;
  top: 50%
@@ -70,7 +79,7 @@ body{
 
 .logo__circle_color_blue{
   left: 8px;
-  top: 15%;
+  top: 10%;
   background: #C8DBFB;
 }
 
