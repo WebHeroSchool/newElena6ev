@@ -55,8 +55,7 @@ body{
   display: inline-block;
   font: bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
   position: relative;
-  padding-left: 44px;
-  padding: 40px 0;
+  padding: 40px 0 40px 44px;
   border: dashed 1px red;
 }
 
