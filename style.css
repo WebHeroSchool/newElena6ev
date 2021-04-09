@@ -1,13 +1,11 @@
 
 body{
   margin: 0;
-  border: dashed 1px red;
 }
 
 .wrapper{
   margin: auto;
   width: 80%;
-  border: dashed 1px red;
 }
 
 .menu{
@@ -23,7 +21,6 @@ body{
     color: #000;
     text-decoration: none;
     transition: opacity 0.5s;
-    border: dashed 1px red;
 }
 
 .menu__item_active::after{
@@ -56,13 +53,13 @@ body{
   font: bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
   position: relative;
   padding: 40px 0 40px 44px;
-  border: dashed 1px red;
 }
 
 .header{
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
+  margin-bottom: 100px;
 }
 
 .logo__circle {
@@ -84,3 +81,48 @@ body{
 .logo__circle_color_dark-blue{
   background: #0056EC;
 }
+
+.main{
+  padding-right: 63%;
+  background: no-repeat top right url(img/mainImg.svg);
+  padding: 0 63% 100px 0;
+}
+
+.main-section{
+  font: 500 18px/21px Roboto,arial,helvetica,sans-serif;
+}
+
+.main__title{
+  margin: 0 0 40px 0;
+  font: 700 50px/65px PT Serif,arial,helvetica,sans-serif;
+}
+
+.main__description{
+  margin: 0 0 41px 0;
+  font: 500 18px/21px Roboto,arial,helvetica,sans-serif;
+}
+
+.main__title-text_highlight{
+  background: #ECF3FF;
+}
+
+ .main__button{
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;
+   font: 500 14px/16px Roboto,arial,helvetica,sans-serif;
+   padding: 25px 16px 0 16px;
+   color: #fff;
+   background: #0056EC;
+   border-radius: 5%;
+   transition: opacity .5s;
+   width: 209px;
+   top: 531px;
+   left: 219px;
+   height: 44px;
+   border-radius: 4px;
+ }
+
+ .main__button:hover{
+   opacity: .5;
+ }
