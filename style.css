@@ -1,7 +1,6 @@
 
 body{
   margin: 0;
-  border: dashed 1px red;
 }
 
 .wrapper{
@@ -13,24 +12,24 @@ body{
 .menu{
   display: flex;
   align-items: center;
+  border: dashed 1px red;
 }
 
 .menu__item{
-    position: relative;
-    margin-right: 24px;
-    display: inline-block;
-    font:500 18px/21px Roboto,arial,helvetica,sans-serif;
-    color: #000;
-    text-decoration: none;
-    transition: opacity 0.5s;
-    border: dashed 1px red;
+  position: relative;
+  margin-right: 26px;
+  display: inline-block;
+  font:500 18px/21px Roboto,arial,helvetica,sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity 0.5s;
+  border: dashed 1px red;
 }
 
 .menu__item_active::after{
   display: block;
   content: "";
   left: 0;
-  position: absolute;
   width: 100%;
   height: 3px;
   background: #0056EC;
@@ -51,18 +50,20 @@ body{
 }
 
 .logo{
-  margin-right: 40%;
+  //margin-right: 15%;
   display: inline-block;
-  font: bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
+  font: 24px/31px pt_serifbold, arial, helvetica, sans-serif;
   position: relative;
-  padding: 40px 0 40px 44px;
+  padding: 40px 0;
+  padding-left: 44px;
   border: dashed 1px red;
 }
 
 .header{
   display: flex;
   justify-content: space-between;
-  padding: 40px 0;
+  //padding: 40px 0;
+  margin-bottom: 200px;
 }
 
 .logo__circle {
@@ -84,3 +85,51 @@ body{
 .logo__circle_color_dark-blue{
   background: #0056EC;
 }
+
+.main{
+  //padding-right: 63%;
+  padding-top: 100%;
+  background: no-repeat right top url(img/mainimg.svg);
+  padding: 0 63% 300px 0;
+  //background-size: 60%;
+}
+
+.main-section{
+  font: 500 18px/21px Roboto,arial,helvetica,sans-serif;
+}
+
+.main__title{
+  margin: 0 0 40px 0;
+  font: 700 66px/88px pt_serifbold,arial,helvetica,sans-serif;
+  //max-width: 497px;
+  top: 415px;
+}
+
+.main__description{
+  margin: 0 0 41px 0;
+  font: 400 22px/26px Roboto,arial,helvetica,sans-serif;
+  width: 455px;
+  top: 613px;
+}
+
+.main__title-text_highlight{
+  background: #ECF3FF;
+}
+
+ .main__button{
+   display: inline-block;
+   text-align: center;
+   text-decoration: none;
+   font: 500 18px/21px Roboto,arial,helvetica,sans-serif;
+   padding: 18px 20px;
+   color: #fff;
+   background: #0056EC;
+   border-radius: 5%;
+   transition: opacity .5s;
+   width: 240px;
+   top: 706px;
+ }
+
+ .main__button:hover{
+   opacity: .5;
+ }
