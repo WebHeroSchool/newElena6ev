@@ -17,7 +17,7 @@ body{
 
 .menu__item{
   position: relative;
-  margin-right: 13px;
+  margin-right: 24px;
   display: inline-block;
   font:500 18px/21px Roboto,arial,helvetica,sans-serif;
   color: #000;
@@ -30,7 +30,6 @@ body{
   display: block;
   content: "";
   left: 0;
-  position: absolute;
   width: 100%;
   height: 3px;
   background: #0056EC;
@@ -51,7 +50,7 @@ body{
 }
 
 .logo{
-  margin-right: 63%;
+  margin-right: 35%;
   display: inline-block;
   font: 24px/31px pt_serifbold, arial, helvetica, sans-serif;
   position: relative;
@@ -64,7 +63,7 @@ body{
   display: flex;
   justify-content: space-between;
   //padding: 40px 0;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .logo__circle {
@@ -89,8 +88,9 @@ body{
 
 .main{
   padding-right: 63%;
+  padding-top: 100%;
   background: no-repeat top right url(img/mainimg.svg);
-  padding: 0 80% 100px 0;
+  padding: 0 63% 100px 0;
 }
 
 .main-section{
@@ -99,10 +99,8 @@ body{
 
 .main__title{
   margin: 0 0 40px 0;
-  font: 700 67px/88px PT Serif,arial,helvetica,sans-serif;
+  font: 700 66px/88px pt_serifbold,arial,helvetica,sans-serif;
   width: 497px;
-  height: 69px;
-  left: calc(50% - 497px/2 - 515.5px);
   top: 415px;
 }
 
@@ -110,8 +108,6 @@ body{
   margin: 0 0 41px 0;
   font: 400 22px/26px Roboto,arial,helvetica,sans-serif;
   width: 455px;
-  height: 52px;
-  left: calc(50% - 455px/2 - 537.5px);
   top: 613px;
 }
 
@@ -130,8 +126,6 @@ body{
    border-radius: 5%;
    transition: opacity .5s;
    width: 270.75px;
-   height: 57px;
-   left: calc(50% - 270.75px/2 - 628.62px);
    top: 706px;
  }
 
